@@ -1,0 +1,54 @@
+/*@import "tailwindcss";*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@plugin "daisyui";
+
+
+body {
+    @apply bg-gray-50;
+    background-color: white;
+}
+
+@layer components {
+    .btn {
+        @apply bg-[#12b488] text-white px-3 rounded-md text-sm text-white;
+    }
+    .container {
+        @apply w-full mx-auto px-4;
+        max-width: 100%;
+
+        @screen sm {
+            max-width: 576px;
+        }
+        @screen md {
+            max-width: 768px;
+        }
+        @screen lg {
+            max-width: 992px;
+        }
+        @screen xl {
+            max-width: 1240px;
+        }
+        @screen 2xl {
+            max-width: 1400px;
+        }
+    }
+
+}
+
+.hero-container {
+    background: url("../images/banner.png") center center / cover no-repeat;
+    height: 100vh;
+}
+
+/* Small screens: adjust focus on people */
+@media (max-width: 768px) {
+    .hero-container {
+        background-position: 80% 50%; /* shift horizontally to center people */
+    }
+}
+.hero-section{
+
+}
