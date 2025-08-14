@@ -44,7 +44,7 @@ body {
 }
 
 /* Small screens: adjust focus on people */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .hero-container {
         background-position: 80% 50%; /* shift horizontally to center people */
     }

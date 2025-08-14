@@ -33,7 +33,7 @@
           @click.self="closeMenu"
       >
         <div
-            class="bg-white w-1/2 h-full shadow-lg p-6 z-50"
+            class="bg-white md:w-1/2 w-full h-full shadow-lg p-6 z-50"
         >
           <!-- Close button -->
           <button @click="closeMenu" class="mb-4">
