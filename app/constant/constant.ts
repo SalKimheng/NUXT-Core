@@ -8,13 +8,14 @@ export const navbarData = [
         id: 2,
         title: "About us",
         route: "/about",
-    },{
-        id: 2,
-        title: "Contact",
-        route: "/contact",
-    },{
-        id: 4,
-        title: "Product",
-        route: "/product",
     },
+    // {
+    //     id: 2,
+    //     title: "Contact",
+    //     route: "/contact",
+    // },{
+    //     id: 4,
+    //     title: "Product",
+    //     route: "/product",
+    // },
 ];
