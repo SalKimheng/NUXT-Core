@@ -4,7 +4,7 @@
       <div class="flex items-center space-x-6">
         <div class="flex items-center space-x-4">
           <button v-if="isMobile" @click="toggleMenu" class="lg:hidden focus:outline-none">
-            <img src="../../assets/svgs/buger.svg" alt="burger" width="24" />
+            <Burger />
           </button>
           <NuxtLink to="/" class="mb-2 lg:text-[32px] font-bold text-black font-integral uppercase text-[25px]">
             PH.Store
@@ -19,9 +19,9 @@
         </ul>
       </div>
       <div class="flex flex-row space-x-3">
-        <img class="lg:hidden" src="../../assets/svgs/search.svg" alt="cart" width="20" height="20">
-        <img src="../../assets/svgs/cart.svg" alt="cart" width="20" height="20">
-        <img src="../../assets/svgs/profile.svg" alt="profile" width="20" height="20">
+        <Search class="lg:hidden"/>
+        <Cart/>
+        <Profile/>
       </div>
     </div>
 
@@ -56,7 +56,10 @@
 
 <script setup>
 import {navbarData} from "../../constant/constant.js";
-import checkbox from "daisyui/components/checkbox/index.js";
+import Search from "../../assets/svgs/search.svg";
+import Cart from "../../assets/svgs/cart.svg";
+import Profile from "../../assets/svgs/profile.svg";
+import Burger from "../../assets/svgs/buger.svg"
 
 const menuOpen = ref(false);
 const isMobile = ref(false);
